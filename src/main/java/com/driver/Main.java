@@ -23,6 +23,9 @@ public class Main {
         String str = obj.meth();
         System.out.println(str);
 
+        String str1 = obj.meth();
+        System.out.println(str1);
+
     }
 }
 
