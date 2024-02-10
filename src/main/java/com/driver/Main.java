@@ -12,19 +12,22 @@ public class Main {
         System.out.println(str1);
 
     }
-}
 
-class A{
-    public String meth(){
-        return "class A meth";
+    public static class A{
+
+        String str = meth();
+        public String meth(){
+            return "class A meth";
+        }
+
+
     }
 
-    String str = meth();
-}
+   public static class B extends A{
 
-class B extends A{
-
-    public String meth(){
-        return "Method is overridden in Extendend class B";
+        public String meth(){
+            return "Method is overridden in Extendend class B";
+        }
     }
 }
+
